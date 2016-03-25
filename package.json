@@ -1,11 +1,16 @@
 {
   "name": "rdfw",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lightweight framework with hyperscript and redux like API",
   "main": "src",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "prepublish": "webpack"
   },
   "author": "Jason",
   "license": "MIT",
