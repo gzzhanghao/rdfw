@@ -86,7 +86,7 @@ The diff algorithm I used in the framework is so naive that we have to respect s
 - Type of elements should never change
 - Only string and number values will be shown as text node
 
-Here are some valid usages:
+__Some valid usages__
 
 ```javascript
 h('element', [
@@ -105,7 +105,7 @@ h('element', [
 ])
 ```
 
-And here are some invalid:
+__And here are some invalid:__
 
 ```javascript
 h('element', dynamicArray.map(v =>
@@ -132,4 +132,4 @@ h('element', [
 ])
 ```
 
-Breaking any of these rules may leads to unknown behaviour :P
+__Breaking any of these rules may leads to unknown behaviour :P__
