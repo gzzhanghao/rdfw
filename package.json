@@ -1,0 +1,21 @@
+{
+  "name": "rdfw",
+  "version": "0.0.1",
+  "description": "A lightweight framework with hyperscript and redux like API",
+  "main": "src",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Jason",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-check-es2015-constants": "^6.7.2",
+    "babel-plugin-transform-es2015-destructuring": "^6.6.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.7.4",
+    "babel-plugin-transform-es2015-parameters": "^6.7.0",
+    "webpack": "^1.12.14"
+  }
+}
