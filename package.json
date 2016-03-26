@@ -1,6 +1,6 @@
 {
   "name": "rdfw",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A lightweight framework with hyperscript and redux like API",
   "main": "lib",
   "files": [

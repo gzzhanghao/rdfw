@@ -17,7 +17,7 @@ ___This project should be considered unstable, use it at your own risk___
 - Store.dispatch(action: Object): void
 - Store.subscribe(subscriber: Function): void
 - Store.getState(): Object
-- bootstrap(App: Function, store: Store, getActions: Function = identity): Node
+- bootstrap(App: Function, store: Store, env: any): Node
 
 ## Usage
 
@@ -29,8 +29,10 @@ import { bootstrap, createStore } from 'rdfw'
 import App from './components/App'
 import rootReducer from './reducers'
 
+const store = createStore(rootReducer)
+
 document.body.appendChild(
-  bootstrap(App, createStore(rootReducer))
+  bootstrap(App, store, store.dispatch.bind(store))
 )
 ```
 
