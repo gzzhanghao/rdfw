@@ -133,3 +133,7 @@ h('element', [
 ```
 
 __Breaking any of these rules may leads to unknown behaviour :P__
+
+## Browser compatibility
+
+The default build of rdfw is only tested on the latest version of chrome. It require browser support for some lattest ES6 features, like arrow functions and iterators. If you want to use it on browser that does not supports ES6, you can require the package with babel-loader and rebuild it with your own configurations. Happy hacking ;)

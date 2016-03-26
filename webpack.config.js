@@ -1,17 +1,5 @@
 'use strict'
 
-const webpack = require('webpack')
-
-const babel = {
-  compact: true,
-  plugins: [
-    'check-es2015-constants',
-    'transform-es2015-destructuring',
-    'transform-es2015-parameters',
-    'transform-es2015-modules-commonjs'
-  ]
-}
-
 module.exports = {
   entry: './src',
   output: {
@@ -22,8 +10,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel-loader', query: babel }
+      { test: /\.js$/, loader: 'babel-loader?compact' }
     ]
-  },
-  devtool: '#sourcemap'
+  }
 }
