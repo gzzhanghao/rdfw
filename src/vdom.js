@@ -1,5 +1,4 @@
 const isArray = Array.isArray
-const flattenMap = new WeakMap
 
 export function h(name, props = {}, children = []) {
   if (isArray(props)) {
