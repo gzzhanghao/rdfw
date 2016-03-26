@@ -1,3 +1,7 @@
+const setImmediate = window.setImmediate ||
+  window.requestAnimationFrame ||
+  (fn => setTimeout(fn, 0))
+
 export function combineReducers(reducers) {
   const keys = Object.keys(reducers)
   return (state, action, fullState = state) => keys.reduce((result, key) => {
